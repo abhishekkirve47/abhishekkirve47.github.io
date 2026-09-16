@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhishek Kirve | Performance Marketing & Growth</title>
+    <meta name="description" content="Performance marketing and growth portfolio of Abhishek Kirve — customer acquisition, paid media, analytics, CRO, creative testing and growth strategy.">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Abhishek Kirve | Performance Marketing & Growth">
+    <meta property="og:description" content="I design customer acquisition systems connecting media, creative, conversion, analytics, and business economics.">
+    <meta property="og:type" content="website">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        zinc: {
+                            900: '#18181b',
+                            950: '#09090b',
+                        },
+                        accent: {
+                            DEFAULT: '#4f46e5', // Indigo-600
+                            hover: '#4338ca',   // Indigo-700
+                            light: '#6366f1',   // Indigo-500
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #09090b; }
+        ::-webkit-scrollbar-thumb { background: #27272a; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #3f3f46; }
+        
+        .modal-open { overflow: hidden; }
+        
+        .fade-in { animation: fadeIn 0.4s ease-in-out forwards; }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="bg-zinc-950 text-zinc-300 font-sans antialiased selection:bg-accent-light selection:text-white">
+
+    <!-- NAVIGATION -->
+    <nav class="fixed top-0 left-0 right-0 z-40 bg-zinc-950/90 backdrop-blur-md border-b border-zinc-800">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="text-white font-bold tracking-tight text-lg flex items-center gap-2">
+                <span class="w-2.5 h-2.5 bg-accent-light rounded-sm"></span> ABHISHEK KIRVE
+            </a>
+            
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+                <a href="#about" class="hover:text-white transition-colors">About</a>
+                <a href="#framework" class="hover:text-white transition-colors">Framework</a>
+                <a href="#projects" class="hover:text-white transition-colors">Projects</a>
+                <a href="#skills" class="hover:text-white transition-colors">Skills</a>
+                <a href="#certifications" class="hover:text-white transition-colors">Certifications</a>
+                <a href="#contact" class="hover:text-white transition-colors">Contact</a>
+            </div>
+
+            <div class="hidden md:flex items-center gap-4">
+                <a href="#contact" class="px-5 py-2.5 bg-accent hover:bg-accent-hover text-white text-sm font-semibold rounded-md transition-colors">
+                    Let's Connect
+                </a>
+            </div>
+
+            <button id="mobile-menu-btn" class="md:hidden text-zinc-400 hover:text-white">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-zinc-900 border-b border-zinc-800 px-6 py-4 space-y-4 text-sm font-medium">
+            <a href="#about" class="block hover:text-white">About</a>
+            <a href="#framework" class="block hover:text-white">Framework</a>
+            <a href="#projects" class="block hover:text-white">Projects</a>
+            <a href="#skills" class="block hover:text-white">Skills</a>
+            <a href="#contact" class="block text-accent-light">Let's Connect</a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header class="pt-32 pb-20 md:pt-48 md:pb-32 px-6 border-b border-zinc-900 relative overflow-hidden">
+        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-zinc-900 via-zinc-950 to-zinc-950 -z-10"></div>
+        <div class="max-w-4xl mx-auto">
+            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-zinc-900 border border-zinc-800 text-xs font-medium text-zinc-400 mb-8">
+                <span class="relative flex h-2 w-2">
+                  <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                  <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+                </span>
+                Open to Performance Marketing & Growth Opportunities
+            </div>
+            
+            <h1 class="text-5xl md:text-7xl font-bold text-white tracking-tight leading-tight mb-6">
+                Performance Marketing <br/>
+                <span class="text-zinc-500">& Growth</span>
+            </h1>
+            
+            <p class="text-lg md:text-xl text-zinc-400 max-w-2xl leading-relaxed mb-10">
+                I build customer acquisition strategies by connecting paid media, creative, conversion, analytics, and business economics. I think beyond ad clicks to design systems that generate economically valuable customers.
+            </p>
+
+            <div class="flex flex-col sm:flex-row items-center gap-4">
+                <a href="#projects" class="w-full sm:w-auto px-8 py-3.5 bg-white text-zinc-950 hover:bg-zinc-200 font-semibold rounded-md transition-colors text-center">
+                    View Strategic Projects
+                </a>
+                <a href="#contact" class="w-full sm:w-auto px-8 py-3.5 bg-zinc-900 text-white border border-zinc-700 hover:border-zinc-500 font-semibold rounded-md transition-colors text-center flex items-center justify-center gap-2">
+                    <i data-lucide="download" class="w-4 h-4"></i> Download Resume
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="py-24 px-6 border-b border-zinc-900">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-12">
+            <div class="md:col-span-4">
+                <h2 class="text-xs font-semibold tracking-widest text-accent-light uppercase mb-2">Profile</h2>
+                <h3 class="text-3xl font-bold text-white">The Operator</h3>
+            </div>
+            <div class="md:col-span-8 space-y-6 text-zinc-400 leading-relaxed text-lg">
+                <p>
+                    I am Abhishek Kirve, based in Pune, India. Coming from a <strong>B.Sc. Computer Science</strong> background (Savitribai Phule Pune University, 2024), my approach to marketing is fundamentally structural. I view customer acquisition as a data-driven system rather than purely subjective creative guesswork.
+                </p>
+                <p>
+                    My technical background equips me with an edge in tracking architecture (GA4, GTM), automation (n8n), and systems thinking. Currently in my early career, my explicit focus is on building deep expertise in <strong>Paid Acquisition (Meta/Google), Funnel Optimization, and Unit Economics</strong>.
+                </p>
+                <div class="grid grid-cols-2 sm:grid-cols-3 gap-6 pt-6 border-t border-zinc-800">
+                    <div>
+                        <span class="block text-white font-semibold mb-1">Location</span>
+                        <span class="text-sm">Pune, India</span>
+                    </div>
+                    <div>
+                        <span class="block text-white font-semibold mb-1">Education</span>
+                        <span class="text-sm">B.Sc. Comp Sci (2024)</span>
+                    </div>
+                    <div>
+                        <span class="block text-white font-semibold mb-1">Focus</span>
+                        <span class="text-sm">Performance & Growth</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOW I THINK SECTION -->
+    <section class="py-24 px-6 bg-zinc-900/30 border-b border-zinc-900">
+        <div class="max-w-6xl mx-auto">
+            <div class="mb-16">
+                <h2 class="text-xs font-semibold tracking-widest text-accent-light uppercase mb-2">Philosophy</h2>
+                <h3 class="text-3xl font-bold text-white">How I Think About Growth</h3>
+                <p class="mt-4 text-zinc-400 max-w-2xl">Don't optimize clicks. Optimize economically valuable customer acquisition.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-6 bg-zinc-900 border border-zinc-800 rounded-lg">
+                    <span class="text-xs font-mono text-zinc-500 mb-3 block">01</span>
+                    <h4 class="text-white font-semibold mb-2">Start With The Business</h4>
+                    <p class="text-sm text-zinc-400">Marketing serves economics. Before opening Ad Manager, I define what we are actually trying to improve (CAC, LTV, Activation, Margin).</p>
+                </div>
+                <div class="p-6 bg-zinc-900 border border-zinc-800 rounded-lg">
+                    <span class="text-xs font-mono text-zinc-500 mb-3 block">02</span>
+                    <h4 class="text-white font-semibold mb-2">Understand The Customer</h4>
+                    <p class="text-sm text-zinc-400">Who is buying, what is the pain point, and what are their objections? Strategy starts with customer psychology.</p>
+                </div>
+                <div class="p-6 bg-zinc-900 border border-zinc-800 rounded-lg">
+                    <span class="text-xs font-mono text-zinc-500 mb-3 block">03</span>
+                    <h4 class="text-white font-semibold mb-2">Match Intent With Channel</h4>
+                    <p class="text-sm text-zinc-400">Does demand exist (Google Search) or do we need to generate demand (Meta/Social)? Channel selection is dictated by intent.</p>
+                </div>
+                <div class="p-6 bg-zinc-900 border border-zinc-800 rounded-lg">
+                    <span class="text-xs font-mono text-zinc-500 mb-3 block">04</span>
+                    <h4 class="text-white font-semibold mb-2">Improve The Funnel</h4>
+                    <p class="text-sm text-zinc-400">Traffic without conversion is waste. Identifying drop-offs between ad click, landing page view, and checkout is mandatory.</p>
+                </div>
+                <div class="p-6 bg-zinc-900 border border-zinc-800 rounded-lg">
+                    <span class="text-xs font-mono text-zinc-500 mb-3 block">05</span>
+                    <h4 class="text-white font-semibold mb-2">Optimize Economics</h4>
+                    <p class="text-sm text-zinc-400">Can the acquisition system sustain itself? If CAC > LTV/Margin, the campaigns must be restructured.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FRAMEWORK SECTION -->
+    <section id="framework" class="py-24 px-6 border-b border-zinc-900">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16 max-w-3xl mx-auto">
+                <h2 class="text-xs font-semibold tracking-widest text-accent-light uppercase mb-2">Architecture</h2>
+                <h3 class="text-3xl font-bold text-white">The Performance Marketing Framework</h3>
+                <p class="mt-4 text-zinc-400">I don't start with "Which ad should we run?" I start with "What customer are we trying to acquire, what value are we offering, and what system can profitably convert that demand?"</p>
+            </div>
+
+            <!-- Visual Flowchart -->
+            <div class="flex flex-wrap justify-center items-center gap-4 max-w-5xl mx-auto">
+                <div class="px-4 py-2 border border-zinc-700 rounded bg-zinc-900 text-sm font-semibold text-white">BUSINESS</div>
+                <i data-lucide="arrow-right" class="w-4 h-4 text-zinc-600 hidden md:block"></i>
+                <div class="px-4 py-2 border border-zinc-700 rounded bg-zinc-900 text-sm font-semibold text-white">CUSTOMER</div>
+                <i data-lucide="arrow-right" class="w-4 h-4 text-zinc-600 hidden md:block"></i>
+                <div class="px-4 py-2 border border-zinc-700 rounded bg-zinc-900 text-sm font-semibold text-white">OFFER</div>
+                <i data-lucide="arrow-right" class="w-4 h-4 text-zinc-600 hidden md:block"></i>
+                <div class="px-4 py-2 border border-zinc-700 rounded bg-zinc-900 text-sm font-semibold text-white">CHANNEL</div>
+                <i data-lucide="arrow-right" class="w-4 h-4 text-zinc-600 hidden md:block"></i>
+                <div class="px-4 py-2 border border-zinc-700 rounded bg-zinc-900 text-sm font-semibold text-white">CREATIVE</div>
+                
+                <div class="w-full h-2 hidden md:block"></div> <!-- line break -->
+                
+                <div class="px-4 py-2 border border-zinc-700 rounded bg-zinc-900 text-sm font-semibold text-white">LANDING PAGE</div>
+                <i data-lucide="arrow-right" class="w-4 h-4 text-zinc-600 hidden md:block"></i>
+                <div class="px-4 py-2 border border-zinc-700 rounded bg-zinc-900 text-sm font-semibold text-white">TRACKING</div>
+                <i data-lucide="arrow-right" class="w-4 h-4 text-zinc-600 hidden md:block"></i>
+                <div class="px-4 py-2 border border-zinc-700 rounded bg-zinc-900 text-sm font-semibold text-white">ECONOMICS</div>
+                <i data-lucide="arrow-right" class="w-4 h-4 text-zinc-600 hidden md:block"></i>
+                <div class="px-4 py-2 border border-accent-light rounded bg-accent-light/10 text-sm font-semibold text-accent-light">OPTIMIZATION</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="py-24 px-6 bg-zinc-900/20 border-b border-zinc-900">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+                <div>
+                    <h2 class="text-xs font-semibold tracking-widest text-accent-light uppercase mb-2">Execution Proof</h2>
+                    <h3 class="text-3xl font-bold text-white">Strategic Growth Projects</h3>
+                    <p class="mt-2 text-zinc-400 text-sm max-w-2xl">
+                        Independent strategic analyses created to demonstrate performance marketing frameworks, funnel design, and business logic. <br/>
+                        <span class="text-amber-500/80 font-medium">SPECULATIVE PORTFOLIO — NO OFFICIAL CLIENT RELATIONSHIPS CLAIMED.</span>
+                    </p>
+                </div>
+                
+                <!-- Search & Filters -->
+                <div class="flex flex-col gap-4">
+                    <div class="relative">
+                        <i data-lucide="search" class="w-4 h-4 absolute left-3 top-1/2 -translate-y-1/2 text-zinc-500"></i>
+                        <input type="text" id="projectSearch" placeholder="Search brands, channels..." class="w-full md:w-64 pl-10 pr-4 py-2 bg-zinc-900 border border-zinc-800 rounded-md text-sm text-white focus:outline-none focus:border-accent">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Filters -->
+            <div class="flex flex-wrap gap-2 mb-10" id="filterContainer">
+                <button class="filter-btn active px-4 py-1.5 rounded-full border border-zinc-700 text-xs font-medium text-white bg-zinc-800" data-filter="all">ALL</button>
+                <button class="filter-btn px-4 py-1.5 rounded-full border border-zinc-800 text-xs font-medium text-zinc-400 hover:text-white hover:border-zinc-700" data-filter="Digital Platform">DIGITAL PLATFORMS</button>
+                <button class="filter-btn px-4 py-1.5 rounded-full border border-zinc-800 text-xs font-medium text-zinc-400 hover:text-white hover:border-zinc-700" data-filter="D2C">D2C</button>
+                <button class="filter-btn px-4 py-1.5 rounded-full border border-zinc-800 text-xs font-medium text-zinc-400 hover:text-white hover:border-zinc-700" data-filter="Fintech">FINTECH</button>
+                <button class="filter-btn px-4 py-1.5 rounded-full border border-zinc-800 text-xs font-medium text-zinc-400 hover:text-white hover:border-zinc-700" data-filter="Edtech">EDTECH</button>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="projectsGrid">
+                <!-- Injected via JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS & TOOLS SECTION -->
+    <section id="skills" class="py-24 px-6 border-b border-zinc-900">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-xs font-semibold tracking-widest text-accent-light uppercase mb-2">Capabilities</h2>
+            <h3 class="text-3xl font-bold text-white mb-12">Skills Matrix</h3>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Category -->
+                <div>
+                    <h4 class="text-white font-semibold mb-4 pb-2 border-b border-zinc-800">Paid Media</h4>
+                    <ul class="space-y-2 text-sm text-zinc-400">
+                        <li>Meta Ads Architecture</li>
+                        <li>Google Search Intent Ads</li>
+                        <li>Google Shopping / Display</li>
+                        <li>YouTube Video Ads</li>
+                        <li>Remarketing Strategies</li>
+                        <li>Media Buying Mechanics</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4 pb-2 border-b border-zinc-800">Analytics & Tracking</h4>
+                    <ul class="space-y-2 text-sm text-zinc-400">
+                        <li>Google Analytics (GA4)</li>
+                        <li>Google Tag Manager (GTM)</li>
+                        <li>Conversion API Concepts</li>
+                        <li>UTM Governance</li>
+                        <li>Attribution Logic</li>
+                        <li>Dashboarding & Reporting</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4 pb-2 border-b border-zinc-800">Growth & CRO</h4>
+                    <ul class="space-y-2 text-sm text-zinc-400">
+                        <li>Customer Acquisition Strategy</li>
+                        <li>Funnel Analysis</li>
+                        <li>Conversion Rate Optimization</li>
+                        <li>Creative Angle Testing</li>
+                        <li>CAC / ROAS / LTV Analysis</li>
+                        <li>Unit Economics Modeling</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4 pb-2 border-b border-zinc-800">Web & Tech</h4>
+                    <ul class="space-y-2 text-sm text-zinc-400">
+                        <li>Landing Page Architecture</li>
+                        <li>WordPress Ecosystem</li>
+                        <li>Basic HTML/CSS</li>
+                        <li>n8n Automation Workflows</li>
+                        <li>AI Assisted Marketing</li>
+                        <li>Data Structuring</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Tools Ecosystem -->
+            <div class="mt-20">
+                <h4 class="text-white font-semibold mb-6 text-center">Tools & Ecosystems</h4>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <span class="px-4 py-2 border border-zinc-800 bg-zinc-900 rounded-md text-xs font-medium text-zinc-300">Meta Ads Manager</span>
+                    <span class="px-4 py-2 border border-zinc-800 bg-zinc-900 rounded-md text-xs font-medium text-zinc-300">Google Ads</span>
+                    <span class="px-4 py-2 border border-zinc-800 bg-zinc-900 rounded-md text-xs font-medium text-zinc-300">GA4</span>
+                    <span class="px-4 py-2 border border-zinc-800 bg-zinc-900 rounded-md text-xs font-medium text-zinc-300">GTM</span>
+                    <span class="px-4 py-2 border border-zinc-800 bg-zinc-900 rounded-md text-xs font-medium text-zinc-300">Looker Studio</span>
+                    <span class="px-4 py-2 border border-zinc-800 bg-zinc-900 rounded-md text-xs font-medium text-zinc-300">WordPress</span>
+                    <span class="px-4 py-2 border border-zinc-800 bg-zinc-900 rounded-md text-xs font-medium text-zinc-300">Canva</span>
+                    <span class="px-4 py-2 border border-zinc-800 bg-zinc-900 rounded-md text-xs font-medium text-zinc-300">n8n</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section id="certifications" class="py-24 px-6 bg-zinc-900/30 border-b border-zinc-900">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-xs font-semibold tracking-widest text-accent-light uppercase mb-2">Evidence of Learning</h2>
+            <h3 class="text-3xl font-bold text-white mb-12">Certifications</h3>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="p-5 border border-zinc-800 bg-zinc-900 rounded-lg">
+                    <span class="text-xs text-accent-light font-mono block mb-2">Google</span>
+                    <h4 class="text-white font-medium mb-1">Google Ads Search</h4>
+                    <p class="text-xs text-zinc-500">Search intent, bidding, campaign structure.</p>
+                </div>
+                <div class="p-5 border border-zinc-800 bg-zinc-900 rounded-lg">
+                    <span class="text-xs text-accent-light font-mono block mb-2">Google</span>
+                    <h4 class="text-white font-medium mb-1">Google Ads Measurement</h4>
+                    <p class="text-xs text-zinc-500">Tracking, attribution modeling, analytics.</p>
+                </div>
+                <div class="p-5 border border-zinc-800 bg-zinc-900 rounded-lg">
+                    <span class="text-xs text-accent-light font-mono block mb-2">Google</span>
+                    <h4 class="text-white font-medium mb-1">Google Analytics</h4>
+                    <p class="text-xs text-zinc-500">GA4 properties, event architecture, reporting.</p>
+                </div>
+                <div class="p-5 border border-zinc-800 bg-zinc-900 rounded-lg">
+                    <span class="text-xs text-accent-light font-mono block mb-2">Google</span>
+                    <h4 class="text-white font-medium mb-1">Fundamentals of Digital Marketing</h4>
+                    <p class="text-xs text-zinc-500">Core concepts, SEO, SEM, local marketing.</p>
+                </div>
+                <div class="p-5 border border-zinc-800 bg-zinc-900 rounded-lg">
+                    <span class="text-xs text-accent-light font-mono block mb-2">HubSpot Academy</span>
+                    <h4 class="text-white font-medium mb-1">Digital Marketing & Social Media</h4>
+                    <p class="text-xs text-zinc-500">Inbound strategy, content funnels.</p>
+                </div>
+                <div class="p-5 border border-zinc-800 bg-zinc-900 rounded-lg">
+                    <span class="text-xs text-accent-light font-mono block mb-2">Semrush / Forage</span>
+                    <h4 class="text-white font-medium mb-1">SEO & Job Simulation</h4>
+                    <p class="text-xs text-zinc-500">Technical SEO, practical marketing frameworks.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CAREER FOCUS & CONTACT -->
+    <section id="contact" class="py-24 px-6 relative overflow-hidden">
+        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-zinc-900 via-zinc-950 to-zinc-950 -z-10"></div>
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-xs font-semibold tracking-widest text-accent-light uppercase mb-2">Next Steps</h2>
+            <h3 class="text-4xl font-bold text-white mb-6">Let's Talk Growth</h3>
+            
+            <div class="bg-zinc-900 border border-zinc-800 rounded-xl p-8 mb-10 text-left max-w-2xl mx-auto">
+                <h4 class="text-white font-semibold mb-4 text-center">Currently Looking For:</h4>
+                <div class="flex flex-wrap justify-center gap-3">
+                    <span class="px-3 py-1 bg-zinc-800 rounded text-sm text-zinc-300">Performance Marketing Internships</span>
+                    <span class="px-3 py-1 bg-zinc-800 rounded text-sm text-zinc-300">Growth Marketing Roles</span>
+                    <span class="px-3 py-1 bg-zinc-800 rounded text-sm text-zinc-300">Paid Media Executive</span>
+                    <span class="px-3 py-1 bg-zinc-800 rounded text-sm text-zinc-300">Digital Acquisition Roles</span>
+                </div>
+                <p class="text-sm text-zinc-400 text-center mt-6">
+                    I am seeking early-career opportunities where I can apply structured analytics, execute campaigns under real budgets, and solve complex business growth problems.
+                </p>
+            </div>
+
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a href="mailto:abhishekkirve47@gmail.com" class="w-full sm:w-auto px-8 py-3.5 bg-accent hover:bg-accent-hover text-white font-semibold rounded-md transition-colors flex items-center justify-center gap-2">
+                    <i data-lucide="mail" class="w-4 h-4"></i> abhishekkirve47@gmail.com
+                </a>
+                <a href="#" class="w-full sm:w-auto px-8 py-3.5 bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 text-white font-semibold rounded-md transition-colors flex items-center justify-center gap-2">
+                    <i data-lucide="linkedin" class="w-4 h-4"></i> LinkedIn Profile
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-8 text-center border-t border-zinc-900 text-sm text-zinc-600">
+        <p>&copy; 2026 Abhishek Kirve. Designed for Performance.</p>
+        <p class="text-xs mt-1">Pune, Maharashtra, India.</p>
+    </footer>
+
+    <!-- CASE STUDY MODAL -->
+    <div id="projectModal" class="fixed inset-0 z-50 hidden bg-zinc-950/95 backdrop-blur overflow-y-auto">
+        <div class="min-h-screen p-4 md:p-8 flex justify-center items-start pt-20">
+            <div class="bg-zinc-950 border border-zinc-800 rounded-xl w-full max-w-4xl shadow-2xl relative">
+                
+                <!-- Close Button -->
+                <button onclick="closeModal()" class="absolute top-4 right-4 p-2 bg-zinc-900 rounded-md text-zinc-400 hover:text-white transition-colors z-10 sticky-close">
+                    <i data-lucide="x" class="w-5 h-5"></i>
+                </button>
+
+                <!-- Dynamic Content Container -->
+                <div id="modalContent" class="p-6 md:p-12">
+                    <!-- Injected via JS -->
+                </div>
+                
+                <!-- Modal Footer -->
+                <div class="p-6 md:p-12 border-t border-zinc-900 bg-zinc-900/50 flex justify-between rounded-b-xl">
+                    <button onclick="closeModal()" class="text-sm font-medium text-zinc-400 hover:text-white">← Back to Projects</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- JAVASCRIPT: DATA & LOGIC -->
+    <script>
+        // Icons
+        lucide.createIcons();
+
+        // Mobile Menu
+        const mobileBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => mobileMenu.classList.add('hidden'));
+        });
+
+        // 15 STRUCTURED STRATEGIC PROJECTS
+        // Engineered to demonstrate deep analytical capability.
+        const projects = [
+            {
+                id: 'oyo',
+                brand: 'OYO',
+                category: 'Digital Platform',
+                industry: 'Travel / Hospitality',
+                businessModel: 'Marketplace / Aggregator',
+                projectType: 'Speculative Growth Strategy',
+                challenge: 'Balancing search intent with destination demand while managing booking conversion rates.',
+                channels: ['Google Search', 'Meta Ads', 'CRO'],
+                businessContext: 'OYO operates a two-sided marketplace. Revenue relies on volume and take-rates. A core problem is acquiring users profitably before seasonal/location demand spikes.',
+                customerAnalysis: 'Primary: Budget travelers, students, business travelers. Objections: Cleanliness, location accuracy, hidden fees.',
+                marketAnalysis: 'High competition (MakeMyTrip, Agoda). Differentiation heavily relies on price point and micro-location availability.',
+                funnel: [
+                    { stage: 'AWARENESS', action: 'Destination Search (Google) / Travel Inspiration (Meta)' },
+                    { stage: 'INTENT', action: 'Clicks property listing / App Install' },
+                    { stage: 'CONVERSION', action: 'Completes Booking (CRO target)' },
+                    { stage: 'RETENTION', action: 'CRM / App Push for repeat local bookings' }
+                ],
+                channelStrategy: 'Google Search captures bottom-funnel intent ("hotels near me"). Meta generates demand and retargets cart abandoners dynamically.',
+                metaStrategy: 'DPA (Dynamic Product Ads) showing exactly the hotels the user viewed but didn\'t book. Broad targeting for new app installs with location-specific creative.',
+                googleStrategy: 'Granular location bidding. High priority on non-brand category keywords (e.g., "cheap hotels in [City]").',
+                creativeStrategy: [
+                    { angle: 'Urgency', concept: '"Only 2 rooms left in [Location] under ₹999."' },
+                    { angle: 'Social Proof', concept: 'UGC video of a clean, verified room.' },
+                    { angle: 'Convenience', concept: 'Map view highlighting proximity to transit.' }
+                ],
+                landingPage: 'HEADLINE: Exact match to search query. VALUE: Verified stays, free cancellation. PROOF: Rating score. CTA: Book Now (Pay at Hotel).',
+                tracking: 'GA4 for web, AppsFlyer for App Installs. Key event: `purchase` (booking confirmed).',
+                kpis: 'Primary: CAC, Cost Per Booking. Secondary: App Install-to-Booking CVR%.',
+                experiments: 'Hypothesis: Displaying "Pay at Hotel" prominently above the fold will increase CVR by 15%.',
+                economics: 'Contribution margin per booking vs. Blended CAC. Focus on App retention to drive LTV over 3+ bookings to achieve profitability.',
+                disclaimer: 'Independent strategic analysis created to demonstrate performance marketing and growth thinking. Not an official client case study.'
+            },
+            {
+                id: 'palmonas',
+                brand: 'Palmonas',
+                category: 'D2C',
+                industry: 'Demi-Fine Jewelry',
+                businessModel: 'Direct-to-Consumer E-Commerce',
+                projectType: 'Performance Marketing Case Study',
+                challenge: 'Scaling acquisition profitably in a visually competitive jewelry market while increasing Average Order Value (AOV).',
+                channels: ['Meta Ads', 'Influencer Whitelisting'],
+                businessContext: 'Premium positioning bridging the gap between cheap fashion jewelry and expensive fine jewelry. High margin, high visual dependency.',
+                customerAnalysis: 'Women 22-40. Self-gifting and gifting intent. Pain points: Tarnishing, skin allergies, looking "cheap".',
+                marketAnalysis: 'Competes with traditional jewelers and modern fast-fashion. Differentiation: "Demi-fine", 18k gold plated, lifetime warranty.',
+                funnel: [
+                    { stage: 'PROSPECTING', action: 'Visual Hook (Meta Reels)' },
+                    { stage: 'ENGAGEMENT', action: 'Product Page View' },
+                    { stage: 'CONVERSION', action: 'Add to Cart -> Purchase' },
+                    { stage: 'RETENTION', action: 'Email/WhatsApp VIP Club' }
+                ],
+                channelStrategy: 'Meta Ads (Instagram-first) as the primary demand engine. Visual product discovery drives impulse and consideration.',
+                metaStrategy: 'Advantage+ Shopping Campaigns (ASC). Broad targeting. Heavy reliance on creative diversity (UGC, unboxing, high-fashion editorial).',
+                googleStrategy: 'Brand search defense. Performance Max for catalog scaling using high-ROAS assets.',
+                creativeStrategy: [
+                    { angle: 'Education', concept: 'What is Demi-Fine jewelry? (Comparing brass vs stainless steel base)' },
+                    { angle: 'Objection Handling', concept: 'Waterproof test (wearing in shower).' },
+                    { angle: 'Gifting', concept: '"The perfect gift under ₹3000." (Carousel)' }
+                ],
+                landingPage: 'Fast-loading PDP. High-res zoom. Trust badges (Lifetime Warranty, Anti-tarnish). Sticky Add to Cart button.',
+                tracking: 'Meta Pixel (CAPI enabled). Events: ViewContent, AddToCart, InitiateCheckout, Purchase. Matching quality focus.',
+                kpis: 'Primary: Blended ROAS, CPA. Secondary: AOV, Add-to-Cart Rate.',
+                experiments: 'Testing bundle offers ("Buy Necklace, get Earrings 50% off") at checkout to increase AOV and absorb rising CPMs.',
+                economics: 'COGS + Fulfillment + CAC = Total Cost. If AOV is ₹2500 and CAC is ₹800, first-order profitability requires COGS < ₹1000.',
+                disclaimer: 'Independent strategic analysis created to demonstrate performance marketing and growth thinking. Not an official client case study.'
+            },
+            {
+                id: 'zerodha',
+                brand: 'Zerodha',
+                category: 'Fintech',
+                industry: 'Financial Services / Brokerage',
+                businessModel: 'B2C Platform / Transaction Fee',
+                projectType: 'Strategic Growth Project',
+                challenge: 'Acquiring high-LTV retail investors while maintaining a low CAC in an increasingly saturated fintech space.',
+                channels: ['Google Search', 'SEO / Content', 'YouTube'],
+                businessContext: 'Bootstrapped market leader. Zero customer acquisition cost philosophy historically, but growth now requires capturing bottom-funnel intent effectively.',
+                customerAnalysis: 'Young professionals seeking financial independence. Objections: Complexity of trading, hidden fees, trust.',
+                marketAnalysis: 'Intense competition (Groww, Upstox). Zerodha wins on product reliability and educational ecosystem (Varsity).',
+                funnel: [
+                    { stage: 'EDUCATION', action: 'Varsity / YouTube Content Consumption' },
+                    { stage: 'INTENT', action: 'Google Search (Demat Account)' },
+                    { stage: 'ACTIVATION', action: 'KYC & Account Opening' },
+                    { stage: 'MONETIZATION', action: 'First Trade / SIP Setup' }
+                ],
+                channelStrategy: 'Search-driven acquisition. Capture demand when users actively search for investment platforms. Use YouTube for trust-building.',
+                metaStrategy: 'Retargeting only. Showing simple "Complete your KYC" or "Start your first SIP" messages to users who dropped off.',
+                googleStrategy: 'Dominate high-intent terms ("Open Demat Account", "Best trading app"). Exact match bidding for efficiency.',
+                creativeStrategy: [
+                    { angle: 'Trust/Proof', concept: '"India\'s largest stock broker." (Minimalist graphic)' },
+                    { angle: 'Cost', concept: 'Zero brokerage on equity delivery.' },
+                    { angle: 'Education', concept: 'Short YouTube pre-roll on the power of compounding.' }
+                ],
+                landingPage: 'Frictionless KYC entry. Single email/phone input. Clean, no-nonsense UX. Trust metrics (Active users, Assets managed).',
+                tracking: 'GTM tracking multi-step form drop-offs. Crucial to measure "Cost per Funded Account" rather than just "Cost per Lead".',
+                kpis: 'Primary: Cost Per Funded Account. Secondary: KYC Drop-off Rate.',
+                experiments: 'A/B test the initial signup step (Phone number vs Google SSO) to measure impact on top-of-funnel conversion volume.',
+                economics: 'Customer acquisition cost must be recovered within the first year of AMC (Annual Maintenance Charge) and trading volume revenue.',
+                disclaimer: 'Independent strategic analysis created to demonstrate performance marketing and growth thinking. Not an official client case study.'
+            },
+            {
+                id: 'zomato',
+                brand: 'Zomato',
+                category: 'Digital Platform',
+                industry: 'Food Delivery',
+                businessModel: 'Hyperlocal Marketplace',
+                projectType: 'Performance Marketing Simulation',
+                challenge: 'Managing hyper-local acquisition efficiency and increasing order frequency for retention.',
+                channels: ['Google App Campaigns', 'Meta Ads', 'CRM'],
+                businessContext: 'High-frequency, low-AOV marketplace. Profitability depends entirely on habitual usage (retention) and route density.',
+                customerAnalysis: 'Urban demographics. Triggers: Hunger, convenience, time-scarcity, cravings.',
+                marketAnalysis: 'Duopoly with Swiggy. Switching costs are zero. Loyalty is driven by delivery speed and platform experience.',
+                funnel: [
+                    { stage: 'AWARENESS', action: 'Hunger Trigger (Time-based)' },
+                    { stage: 'ACQUISITION', action: 'App Install via UAC / Meta' },
+                    { stage: 'ACTIVATION', action: 'First Order (often subsidized)' },
+                    { stage: 'RETENTION', action: 'Zomato Gold / CRM pushes' }
+                ],
+                channelStrategy: 'Google UAC for volume App Installs. Push notifications and Email for retention. Meta for dynamic local restaurant awareness.',
+                metaStrategy: 'Day-parting campaigns (Lunch/Dinner spikes). Location-radius targeting showing top-rated restaurants within 3km.',
+                googleStrategy: 'UAC (Universal App Campaigns) optimizing for in-app events (First Order), not just installs.',
+                creativeStrategy: [
+                    { angle: 'Craveability', concept: 'High-res macro shots of melting cheese/pizza.' },
+                    { angle: 'Offer', concept: '50% off first 3 orders.' },
+                    { angle: 'Humor/Relatability', concept: 'Meme-style creatives tapping into local pop culture.' }
+                ],
+                landingPage: 'Deep-linking directly to a restaurant menu or offer page within the App to reduce friction post-click.',
+                tracking: 'Mobile Measurement Partner (MMP - AppsFlyer/Branch). Tracking Install -> Register -> AddToCart -> Purchase.',
+                kpis: 'Primary: Cost Per First Order. Secondary: Order Frequency (30-day).',
+                experiments: 'Test day-parting ad delivery vs. always-on delivery to see impact on CPA during peak hunger hours (12 PM & 7 PM).',
+                economics: 'First order is often unprofitable due to CAC and discounts. Economics rely on LTV over 6 months achieving >4 orders/month.',
+                disclaimer: 'Independent strategic analysis created to demonstrate performance marketing and growth thinking. Not an official client case study.'
+            },
+            {
+                id: 'lakme',
+                brand: 'Lakmé',
+                category: 'Consumer Brand',
+                industry: 'Beauty & Cosmetics',
+                businessModel: 'Omnichannel FMCG / D2C',
+                projectType: 'Strategic Brand Analysis',
+                challenge: 'Driving D2C channel growth against pure-play digital native brands while leveraging mass brand equity.',
+                channels: ['Meta Ads', 'Google Shopping', 'YouTube'],
+                businessContext: 'Legacy brand shifting focus to digital-first sales. High brand awareness, challenge is driving direct web conversions over marketplace (Nykaa/Amazon) reliance.',
+                customerAnalysis: 'Broad demographic. Pain points: Shade matching online, product authenticity, trend adoption.',
+                marketAnalysis: 'Squeezed between premium international brands and aggressive D2C startups (Sugar, Mamaearth).',
+                funnel: [
+                    { stage: 'DISCOVERY', action: 'YouTube Makeup Tutorial / Influencer' },
+                    { stage: 'CONSIDERATION', action: 'Search / Review reading' },
+                    { stage: 'CONVERSION', action: 'D2C site purchase via Shopping Ad' },
+                    { stage: 'RETENTION', action: 'Cross-sell routines' }
+                ],
+                channelStrategy: 'Google Shopping for high-intent capture. YouTube for product education/tutorials. Meta for look-driven discovery.',
+                metaStrategy: 'Catalog sales for dynamic retargeting. Video-first prospecting using beauty influencers demonstrating the product.',
+                googleStrategy: 'Maximize ROAS on Google Shopping. Capture generic queries ("best matte lipstick") with high-bid Search ads.',
+                creativeStrategy: [
+                    { angle: 'Demonstration', concept: '15-sec reel showing swatch application and 12-hour stay test.' },
+                    { angle: 'Authority', concept: 'Fashion Week backstage usage.' },
+                    { angle: 'Catalog', concept: 'Dynamic carousel of shades viewed.' }
+                ],
+                landingPage: 'Virtual Try-On integration. Clear shade selectors. Bundle offers (Buy Lipstick, get Primer miniature).',
+                tracking: 'GA4 Enhanced Ecommerce. Crucial to track cross-domain if users jump to Nykaa, but focus is D2C attribution.',
+                kpis: 'Primary: D2C ROAS, CPA. Secondary: Bounce rate on PDPs.',
+                experiments: 'Testing Collection Ads vs Standard Video on Meta to see if browsing in-app reduces friction.',
+                economics: 'High gross margins in cosmetics allow for aggressive CAC on first purchase if routine-based cross-selling is established.',
+                disclaimer: 'Independent strategic analysis created to demonstrate performance marketing and growth thinking. Not an official client case study.'
+            },
+            // For the sake of response length and token limits, generating 10 more with slightly condensed text, but FULL structure.
+            {
+                id: 'cred', brand: 'CRED', category: 'Fintech', industry: 'Financial Services', businessModel: 'Platform / Lending', projectType: 'Growth Strategy Project',
+                challenge: 'Acquiring high credit-score individuals at scale and increasing multi-product adoption (Lending, Pay).', channels: ['Meta Ads', 'YouTube', 'Programmatic'],
+                businessContext: 'Premium positioning. Revenue shifts from D2C commerce to high-margin financial products (Cash, Mint).', customerAnalysis: 'Top 1% earners. High credit score. Desire status, convenience, and rewards.', marketAnalysis: 'Unique positioning. Competing indirectly with banking apps and premium credit cards.',
+                funnel: [{stage: 'AWARENESS', action: 'Viral Video/Brand Ad'}, {stage: 'ACTIVATION', action: 'Credit Check'}, {stage: 'MONETIZATION', action: 'Bill Pay / Loan Uptake'}],
+                channelStrategy: 'Brand-heavy top of funnel. Highly targeted Meta ads focusing on iOS users in Tier 1 cities.', metaStrategy: 'Lookalike audiences based on highest LTV users. iOS targeting. Luxury visual language.', googleStrategy: 'Brand defense. Intercepting "credit card bill payment" queries.',
+                creativeStrategy: [{angle: 'Status', concept: '"Not everyone gets in."'}, {angle: 'Utility', concept: 'Manage all cards in one swipe.'}, {angle: 'Rewards', concept: 'Earn coins for paying on time.'}],
+                landingPage: 'Minimalist App store page. High design aesthetic.', tracking: 'MMP tracking Install to Credit-Score-Checked event.', kpis: 'Primary: Cost Per Verified User. Secondary: Product attachment rate.', experiments: 'Test hook variations emphasizing "Status" vs "Rewards".', economics: 'High CAC justified by extremely high lending LTV.', disclaimer: 'Independent strategic analysis. Not a client case study.'
+            },
+            {
+                id: 'physicswallah', brand: 'Physics Wallah', category: 'Edtech', industry: 'Education', businessModel: 'Freemium / Subscriptions', projectType: 'Performance Marketing Case Study',
+                challenge: 'Converting massive free YouTube audience into paid app subscribers cost-effectively.', channels: ['YouTube Ads', 'Google Search', 'Meta Ads'],
+                businessContext: 'Content-first giant. Low ARPU but massive volume. Trust is the primary driver.', customerAnalysis: 'Tier 2/3 students preparing for JEE/NEET. Price sensitive.', marketAnalysis: 'Disrupted Unacademy/Byjus via pricing and relatable teaching.',
+                funnel: [{stage: 'AWARENESS', action: 'Free YouTube Lecture'}, {stage: 'LEAD', action: 'App Download'}, {stage: 'CONVERSION', action: 'Batch Purchase'}],
+                channelStrategy: 'Retargeting YouTube viewers with direct response conversion ads on Meta/Google.', metaStrategy: 'Lead Gen for high-ticket offline, Direct conversion for low-ticket online batches.', googleStrategy: 'Search intent for specific exam prep ("NEET crash course").',
+                creativeStrategy: [{angle: 'Authority', concept: 'Teacher-led selfie video.'}, {angle: 'Success', concept: 'Topper testimonials.'}, {angle: 'Scarcity', concept: 'Batch closes in 2 days.'}],
+                landingPage: 'Urgency counters, syllabus breakdown, clear pricing.', tracking: 'Offline conversion tracking for center walk-ins.', kpis: 'Primary: Cost per Enrollment. Secondary: Lead to Conversion %.', experiments: 'Webinar funnel vs direct sales page.', economics: 'Extremely low CAC due to organic dominance.', disclaimer: 'Independent strategic analysis. Not a client case study.'
+            },
+            {
+                id: 'uber', brand: 'Uber', category: 'Digital Platform', industry: 'Mobility', businessModel: 'Marketplace', projectType: 'Speculative Case Study',
+                challenge: 'Balancing rider acquisition with driver supply acquisition in specific geolocations.', channels: ['Search', 'Display', 'App Campaigns'],
+                businessContext: 'Liquid marketplace. Value drops if wait times increase.', customerAnalysis: 'Riders: Need reliable transport. Drivers: Need flexible income.', marketAnalysis: 'Duopoly with Ola. Price and ETA are key drivers.',
+                funnel: [{stage: 'AWARENESS', action: 'Local OOH/Digital'}, {stage: 'INTENT', action: 'App Install'}, {stage: 'CONVERSION', action: 'First Ride/Drive'}],
+                channelStrategy: 'Hyper-local geofenced ads. Separate funnels for B2B (Drivers) and B2C (Riders).', metaStrategy: 'Driver acquisition via Lead Gen forms emphasizing earnings.', googleStrategy: 'UAC for riders. Search for "taxi near me" intercept.',
+                creativeStrategy: [{angle: 'Income (Driver)', concept: 'Earn ₹X this week.'}, {angle: 'Convenience (Rider)', concept: 'Tap and ride.'}],
+                landingPage: 'Deep link to specific ride-type or driver onboarding.', tracking: 'MMP. Event: First Ride Completed.', kpis: 'Cost Per First Ride, Driver CAC.', experiments: 'Incentive testing for first-time drivers.', economics: 'Network effects dictate that high supply lowers ETA, improving rider retention.', disclaimer: 'Independent strategic analysis.'
+            },
+            {
+                id: 'blinkit', brand: 'Blinkit', category: 'Digital Platform', industry: 'Quick Commerce', businessModel: 'Hyperlocal Retail', projectType: 'Growth Strategy Project',
+                challenge: 'Driving habit formation and high-frequency purchasing to offset high delivery logistics costs.', channels: ['Meta', 'UAC', 'Push Notifications'],
+                businessContext: '10-minute delivery model requires immense density. AOV is small, frequency must be high.', customerAnalysis: 'Time-poor urbanites. Impulse buyers. Grocery planners.', marketAnalysis: 'Zepto, Swiggy Instamart war. Inventory depth and UX win.',
+                funnel: [{stage: 'TRIGGER', action: 'Out of milk / Cravings'}, {stage: 'ACTION', action: 'App Open'}, {stage: 'CONVERSION', action: 'Checkout under 2 mins'}],
+                channelStrategy: 'Contextual advertising based on time of day (Breakfast items at 7AM).', metaStrategy: 'Catalog ads showing localized inventory availability.', googleStrategy: 'UAC focused on App Installs and Action.',
+                creativeStrategy: [{angle: 'Speed', concept: 'Delivered before water boils.'}, {angle: 'Assortment', concept: 'Printouts to electronics in 10 mins.'}],
+                landingPage: 'App store -> deep link to category.', tracking: 'Install to First Order. Tracking 7-day retention.', kpis: 'CPA (First Order), 30-day retention.', experiments: 'Test free delivery threshold vs flat discount.', economics: 'Profitability requires scaling AOV and cross-selling high-margin non-grocery items.', disclaimer: 'Independent strategic analysis.'
+            },
+            {
+                id: 'dove', brand: 'Dove', category: 'Consumer Brand', industry: 'Personal Care', businessModel: 'FMCG', projectType: 'Independent Brand Analysis',
+                challenge: 'Translating massive offline brand equity into measurable D2C/E-commerce performance.', channels: ['YouTube', 'Meta', 'Amazon Ads'],
+                businessContext: 'Global FMCG. Transitioning from pure brand marketing to performance-branding.', customerAnalysis: 'Mass market women. Value gentle care and authenticity.', marketAnalysis: 'Highly fragmented. Competing with clinical and natural brands.',
+                funnel: [{stage: 'BRAND', action: 'Emotional Video Campaign'}, {stage: 'PERFORMANCE', action: 'Retargeting with Product Ads'}, {stage: 'SALE', action: 'Marketplace/D2C checkout'}],
+                channelStrategy: 'Full-funnel. YouTube for reach, Meta for traffic, Amazon/Flipkart AMS for bottom-funnel conversion.', metaStrategy: 'Carousel ads highlighting product benefits and dermatologist recommendations.', googleStrategy: 'Generic search ("best shampoo for dry hair") capturing market share.',
+                creativeStrategy: [{angle: 'Emotional', concept: 'Real beauty campaign.'}, {angle: 'Functional', concept: '1/4 moisturizing cream demo.'}],
+                landingPage: 'E-commerce product page with strong reviews and subscription options.', tracking: 'Cross-channel attribution modeling.', kpis: 'ROAS, Market Share %.', experiments: 'Video hook variations (Emotional vs Science-backed).', economics: 'High volume, low margin. LTV relies on household replenishment.', disclaimer: 'Independent strategic analysis.'
+            },
+            {
+                id: 'bellavita', brand: 'Bella Vita', category: 'D2C', industry: 'Fragrance', businessModel: 'E-Commerce', projectType: 'Performance Marketing Case Study',
+                challenge: 'Selling an olfactory product (perfume) digitally where users cannot smell it.', channels: ['Meta Ads', 'Influencer'],
+                businessContext: 'Affordable luxury. Scaling via aggressive performance marketing and bundle offers.', customerAnalysis: 'Aspirational youth. Price sensitive but seeking premium lifestyle.', marketAnalysis: 'Disrupted legacy deodorant brands by offering "perfume" at body spray prices.',
+                funnel: [{stage: 'HOOK', action: 'Influencer Unboxing'}, {stage: 'OFFER', action: '4 for 999 Bundle'}, {stage: 'CONVERSION', action: 'Impulse Buy'}],
+                channelStrategy: 'Meta-first. Heavy reliance on UGC and influencer whitelisting to build trust.', metaStrategy: 'Broad targeting. ASC campaigns. The offer IS the targeting.', googleStrategy: 'Brand search capture. Performance Max.',
+                creativeStrategy: [{angle: 'Value', concept: 'Luxury perfumes under ₹999.'}, {angle: 'Social Proof', concept: 'Street reactions/compliment tests.'}],
+                landingPage: 'Offer-centric LP. "Build your own box" functionality.', tracking: 'Standard Meta CAPI. AOV tracking.', kpis: 'Blended ROAS, CPA.', experiments: 'Pricing psychology (₹999 vs ₹1049).', economics: 'Gross margins support high initial CAC if AOV is pushed >₹1000 via bundles.', disclaimer: 'Independent strategic analysis.'
+            },
+            {
+                id: 'boat', brand: 'boAt', category: 'D2C', industry: 'Consumer Electronics', businessModel: 'Omnichannel E-Commerce', projectType: 'Strategic Growth Project',
+                challenge: 'Maintaining market dominance and ROAS amidst rising customer acquisition costs and marketplace fees.', channels: ['Google Ads', 'Meta', 'Marketplace Ads'],
+                businessContext: 'High volume, fashionable audio. Operates heavily on Amazon/Flipkart but pushes D2C for margin control.', customerAnalysis: 'Gen Z / Millennials. Trend-conscious, budget-friendly audio seekers.', marketAnalysis: 'Intense price wars (Noise, Fire-Boltt).',
+                funnel: [{stage: 'AWARENESS', action: 'Celeb/Cricketer Endorsement'}, {stage: 'SEARCH', action: 'Amazon / Google Search'}, {stage: 'SALE', action: 'Conversion'}],
+                channelStrategy: 'Dominate search intent for electronics. Retarget aggressively via Meta.', metaStrategy: 'Catalog ads for abandoned carts. Lifestyle imagery over product shots.', googleStrategy: 'Heavy Performance Max and standard Shopping ads.',
+                creativeStrategy: [{angle: 'Lifestyle', concept: 'Gym/Travel usage.'}, {angle: 'Feature', concept: '50hr Battery Life.'}],
+                landingPage: 'Feature-heavy PDPs. Cross-selling (buy smartwatch + earbuds).', tracking: 'GA4 Ecommerce.', kpis: 'ROAS, D2C Contribution %.', experiments: 'Upsell pop-ups in cart.', economics: 'Hardware margins are tight; scale and cross-sell are mandatory for profitability.', disclaimer: 'Independent strategic analysis.'
+            },
+            {
+                id: 'meesho', brand: 'Meesho', category: 'Digital Platform', industry: 'E-Commerce Marketplace', businessModel: 'Zero Commission Marketplace', projectType: 'Growth Strategy Project',
+                challenge: 'Acquiring next-billion users (Tier 2/3/4 cities) efficiently while battling Amazon/Flipkart.', channels: ['Meta', 'YouTube', 'Local Networks'],
+                businessContext: 'Targets value-conscious buyers. Operates on ad monetization and logistics revenue.', customerAnalysis: 'First-time internet shoppers. Highly price sensitive. Value regional languages.', marketAnalysis: 'Unchallenged in unbranded fashion/home tier.',
+                funnel: [{stage: 'DISCOVERY', action: 'Vernacular Ad (YouTube/Meta)'}, {stage: 'INSTALL', action: 'App Download'}, {stage: 'PURCHASE', action: 'Low-AOV first order'}],
+                channelStrategy: 'Vernacular video ads. Massive scale UAC. Influencer networks.', metaStrategy: 'Broad targeting across Tier 2+. Highlighting ₹99 products.', googleStrategy: 'UAC campaigns optimized for vernacular languages.',
+                creativeStrategy: [{angle: 'Price Shock', concept: 'Sarees starting at ₹149.'}, {angle: 'Trust', concept: 'Cash on Delivery available.'}],
+                landingPage: 'Direct to app install.', tracking: 'MMP.', kpis: 'Cost Per Install, Cost Per First Order.', experiments: 'Language localization on CTR.', economics: 'Relies on massive scale and ad-revenue from sellers to achieve profitability.', disclaimer: 'Independent strategic analysis.'
+            },
+            {
+                id: 'onepercent', brand: 'One Percent Club', category: 'Edtech', industry: 'Financial Education', businessModel: 'Community Subscription', projectType: 'Performance Marketing Simulation',
+                challenge: 'Scaling acquisition beyond the founder\'s organic audience using paid media funnels.', channels: ['Meta Ads', 'YouTube Ads', 'Email'],
+                businessContext: 'Creator-led business. High trust, high ticket size. Transitioning to scalable paid systems.', customerAnalysis: 'Salaried professionals paying high taxes. Seeking wealth creation systems.', marketAnalysis: 'Niche but growing financial independence sector.',
+                funnel: [{stage: 'LEAD MAGNET', action: 'Free Masterclass / Tool'}, {stage: 'NURTURE', action: 'Email sequence'}, {stage: 'CONVERSION', action: 'Community Purchase'}],
+                channelStrategy: 'YouTube for long-form trust building. Meta for Lead Generation and retargeting.', metaStrategy: 'Lead gen forms offering tax calculators or webinar seats.', googleStrategy: 'Brand search capture.',
+                creativeStrategy: [{angle: 'Pain Point', concept: '"You are losing 30% of your wealth to taxes."'}, {angle: 'Aspiration', concept: 'Financial independence by 40.'}],
+                landingPage: 'Long-form sales page. Heavy social proof, curriculum breakdown.', tracking: 'GTM + CRM integration (Hubspot/LeadSquared).', kpis: 'Cost per Lead, Lead-to-Sale CVR.', experiments: 'Live webinar vs pre-recorded VSL (Video Sales Letter).', economics: 'High margin digital product. CAC can be aggressive.', disclaimer: 'Independent strategic analysis.'
+            },
+            {
+                id: 'groww', brand: 'Groww', category: 'Fintech', industry: 'Investment Platform', businessModel: 'Financial Services', projectType: 'Growth Strategy Project',
+                challenge: 'Winning the top-of-funnel search intent war and converting beginners to active SIP investors.', channels: ['Google Search', 'YouTube', 'ASO'],
+                businessContext: 'Simplifying investing. High growth, battling Zerodha for active SIPs.', customerAnalysis: 'Millennials, first-time investors. Fear of losing money.', marketAnalysis: 'UX and simplicity are the main differentiators.',
+                funnel: [{stage: 'SEARCH', action: '"How to invest in mutual funds"'}, {stage: 'INSTALL', action: 'App Download'}, {stage: 'ACTION', action: 'First SIP'}],
+                channelStrategy: 'SEO/SEM dominance. Massive educational content on YouTube.', metaStrategy: 'Retargeting app installs who haven\'t completed KYC.', googleStrategy: 'Aggressive bidding on competitor terms and generic financial queries.',
+                creativeStrategy: [{angle: 'Simplicity', concept: 'Invest in 3 clicks.'}, {angle: 'Trust', concept: 'Millions of Indians trust Groww.'}],
+                landingPage: 'Clean app store presence. Seamless UX.', tracking: 'MMP. Event: First Investment.', kpis: 'Cost Per Funded Account.', experiments: 'Testing onboarding flows to reduce KYC drop-off.', economics: 'LTV is built over decades of compounding AUM.', disclaimer: 'Independent strategic analysis.'
+            }
+        ];
+
+        // RENDER PROJECTS
+        const grid = document.getElementById('projectsGrid');
+        const searchInput = document.getElementById('projectSearch');
+        const filterBtns = document.querySelectorAll('.filter-btn');
+
+        function renderProjects(data) {
+            grid.innerHTML = '';
+            data.forEach(p => {
+                const card = document.createElement('div');
+                card.className = 'bg-zinc-900 border border-zinc-800 rounded-xl p-6 flex flex-col justify-between group hover:border-zinc-600 transition-colors cursor-pointer fade-in';
+                card.onclick = () => openModal(p.id);
+                card.innerHTML = `
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="text-xs font-mono px-2 py-1 bg-zinc-800 text-zinc-400 rounded">${p.category}</span>
+                            <i data-lucide="arrow-up-right" class="w-5 h-5 text-zinc-600 group-hover:text-accent-light transition-colors"></i>
+                        </div>
+                        <h4 class="text-2xl font-bold text-white mb-1">${p.brand}</h4>
+                        <p class="text-sm font-medium text-accent-light mb-3">${p.industry}</p>
+                        <p class="text-sm text-zinc-400 mb-6 line-clamp-3">${p.challenge}</p>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        ${p.channels.slice(0,3).map(c => `<span class="text-xs px-2 py-1 border border-zinc-700 text-zinc-300 rounded">${c}</span>`).join('')}
+                    </div>
+                `;
+                grid.appendChild(card);
+            });
+            lucide.createIcons();
+        }
+
+        renderProjects(projects);
+
+        // FILTER & SEARCH LOGIC
+        function filterProjects() {
+            const query = searchInput.value.toLowerCase();
+            const activeFilter = document.querySelector('.filter-btn.active').dataset.filter;
+            
+            const filtered = projects.filter(p => {
+                const matchesSearch = p.brand.toLowerCase().includes(query) || p.challenge.toLowerCase().includes(query) || p.channels.join(' ').toLowerCase().includes(query);
+                const matchesFilter = activeFilter === 'all' || p.category === activeFilter;
+                return matchesSearch && matchesFilter;
+            });
+            renderProjects(filtered);
+        }
+
+        searchInput.addEventListener('input', filterProjects);
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                filterBtns.forEach(b => {
+                    b.classList.remove('active', 'bg-zinc-800', 'text-white', 'border-zinc-700');
+                    b.classList.add('text-zinc-400', 'border-zinc-800');
+                });
+                const target = e.target;
+                target.classList.add('active', 'bg-zinc-800', 'text-white', 'border-zinc-700');
+                target.classList.remove('text-zinc-400');
+                filterProjects();
+            });
+        });
+
+        // MODAL LOGIC
+        const modal = document.getElementById('projectModal');
+        const modalContent = document.getElementById('modalContent');
+
+        function openModal(id) {
+            const p = projects.find(x => x.id === id);
+            if (!p) return;
+
+            // Generate Funnel HTML
+            const funnelHTML = p.funnel.map((step, idx) => `
+                <div class="flex flex-col items-center text-center">
+                    <div class="w-10 h-10 rounded-full bg-zinc-900 border border-zinc-700 flex items-center justify-center text-xs font-mono text-zinc-500 mb-2">${idx+1}</div>
+                    <span class="text-xs font-bold text-accent-light mb-1">${step.stage}</span>
+                    <span class="text-xs text-zinc-300">${step.action}</span>
+                </div>
+                ${idx !== p.funnel.length - 1 ? `<div class="hidden md:flex items-center text-zinc-700"><i data-lucide="arrow-right" class="w-4 h-4"></i></div>` : ''}
+            `).join('');
+
+            // Generate Creative HTML
+            const creativeHTML = p.creativeStrategy.map(c => `
+                <div class="bg-zinc-900 border border-zinc-800 p-4 rounded-lg">
+                    <span class="text-xs font-semibold text-accent-light uppercase block mb-1">${c.angle}</span>
+                    <p class="text-sm text-zinc-300">"${c.concept}"</p>
+                </div>
+            `).join('');
+
+            modalContent.innerHTML = `
+                <div class="mb-8">
+                    <span class="text-xs font-mono px-2 py-1 bg-accent-light/10 text-accent-light rounded uppercase tracking-wider">${p.category} • ${p.industry}</span>
+                    <h2 class="text-4xl md:text-5xl font-bold text-white mt-4 mb-2">${p.brand}</h2>
+                    <p class="text-lg text-zinc-400">${p.projectType}</p>
+                </div>
+
+                <div class="bg-amber-500/10 border border-amber-500/20 rounded-lg p-4 mb-10 flex gap-3 items-start">
+                    <i data-lucide="info" class="w-5 h-5 text-amber-500 mt-0.5 shrink-0"></i>
+                    <p class="text-sm text-amber-500/90 leading-relaxed">${p.disclaimer}</p>
+                </div>
+
+                <div class="space-y-12">
+                    <!-- Section 1 -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <h3 class="text-xl font-bold text-white mb-3 flex items-center gap-2"><i data-lucide="briefcase" class="w-5 h-5 text-accent-light"></i> 01. Business Context</h3>
+                            <p class="text-zinc-400 text-sm leading-relaxed">${p.businessContext}</p>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-white mb-3 flex items-center gap-2"><i data-lucide="target" class="w-5 h-5 text-accent-light"></i> 02. Strategic Problem</h3>
+                            <p class="text-zinc-400 text-sm leading-relaxed">${p.challenge}</p>
+                        </div>
+                    </div>
+
+                    <!-- Section 2 -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <h3 class="text-xl font-bold text-white mb-3 flex items-center gap-2"><i data-lucide="users" class="w-5 h-5 text-accent-light"></i> 03. Customer Analysis</h3>
+                            <p class="text-zinc-400 text-sm leading-relaxed">${p.customerAnalysis}</p>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-white mb-3 flex items-center gap-2"><i data-lucide="pie-chart" class="w-5 h-5 text-accent-light"></i> 04. Market Dynamics</h3>
+                            <p class="text-zinc-400 text-sm leading-relaxed">${p.marketAnalysis}</p>
+                        </div>
+                    </div>
+
+                    <!-- Funnel -->
+                    <div>
+                        <h3 class="text-xl font-bold text-white mb-6 flex items-center gap-2"><i data-lucide="filter" class="w-5 h-5 text-accent-light"></i> 05. Acquisition Funnel</h3>
+                        <div class="p-6 bg-zinc-900 border border-zinc-800 rounded-xl flex flex-col md:flex-row justify-between items-center gap-4">
+                            ${funnelHTML}
+                        </div>
+                    </div>
+
+                    <!-- Channels -->
+                    <div>
+                        <h3 class="text-xl font-bold text-white mb-4 flex items-center gap-2"><i data-lucide="radio" class="w-5 h-5 text-accent-light"></i> 06. Channel Strategy</h3>
+                        <p class="text-zinc-400 text-sm leading-relaxed mb-6">${p.channelStrategy}</p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="bg-zinc-900 border border-zinc-800 p-5 rounded-lg">
+                                <h4 class="font-bold text-white mb-2">Meta Ads Execution</h4>
+                                <p class="text-xs text-zinc-400 leading-relaxed">${p.metaStrategy}</p>
+                            </div>
+                            <div class="bg-zinc-900 border border-zinc-800 p-5 rounded-lg">
+                                <h4 class="font-bold text-white mb-2">Google Ads Execution</h4>
+                                <p class="text-xs text-zinc-400 leading-relaxed">${p.googleStrategy}</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Creative -->
+                    <div>
+                        <h3 class="text-xl font-bold text-white mb-4 flex items-center gap-2"><i data-lucide="pen-tool" class="w-5 h-5 text-accent-light"></i> 07. Creative Angles (Demo)</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                            ${creativeHTML}
+                        </div>
+                    </div>
+
+                    <!-- LP & CRO -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <h3 class="text-xl font-bold text-white mb-3 flex items-center gap-2"><i data-lucide="layout" class="w-5 h-5 text-accent-light"></i> 08. Landing Page / CRO</h3>
+                            <p class="text-zinc-400 text-sm leading-relaxed">${p.landingPage}</p>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-white mb-3 flex items-center gap-2"><i data-lucide="activity" class="w-5 h-5 text-accent-light"></i> 09. Tracking Architecture</h3>
+                            <p class="text-zinc-400 text-sm leading-relaxed">${p.tracking}</p>
+                        </div>
+                    </div>
+
+                    <!-- Measurement -->
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div class="bg-zinc-900 border border-zinc-800 p-5 rounded-lg">
+                            <h4 class="font-bold text-white mb-2">10. KPI Framework</h4>
+                            <p class="text-xs text-zinc-400 leading-relaxed">${p.kpis}</p>
+                        </div>
+                        <div class="bg-zinc-900 border border-zinc-800 p-5 rounded-lg">
+                            <h4 class="font-bold text-white mb-2">11. Experimentation</h4>
+                            <p class="text-xs text-zinc-400 leading-relaxed">${p.experiments}</p>
+                        </div>
+                        <div class="bg-zinc-900 border border-zinc-800 p-5 rounded-lg border-l-2 border-l-accent-light">
+                            <h4 class="font-bold text-white mb-2">12. Economics</h4>
+                            <p class="text-xs text-zinc-400 leading-relaxed">${p.economics}</p>
+                        </div>
+                    </div>
+                </div>
+            `;
+            lucide.createIcons();
+            modal.classList.remove('hidden');
+            document.body.classList.add('modal-open');
+        }
+
+        function closeModal() {
+            modal.classList.add('hidden');
+            document.body.classList.remove('modal-open');
+        }
+
+        // Close modal on click outside
+        modal.addEventListener('click', (e) => {
+            if(e.target === modal) closeModal();
+        });
+    </script>
+</body>
+</html>
